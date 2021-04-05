@@ -10,11 +10,17 @@ multi worker cluster using Ubuntu servers.
 2. Update the master-ip in master.sh
 3. Run below command
 ```bash
-./master.sh
+./master.sh <master-node-ip> 
 ```
 4. Get scripts on worker node
 5. Update the master ip, token and checksum
 6. Run below command
 ```bash
-./worker.sh
+./worker.sh <master-node-ip> <api-server-port> <token> <certificate-hash>
 ```
+
+
+## TODO
+
+1. Scirpts are currently building the Kubernetes cluster with version
+1.19, needs to parameterize the Kubernetes version.
