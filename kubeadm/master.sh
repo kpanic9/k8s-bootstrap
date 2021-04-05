@@ -2,7 +2,7 @@
 
 source ./node-prepation.sh
 
-echo "Configurong the master node."
+echo "Configuring the master node."
 kubeadm config images pull
 kubeadm init \
 --apiserver-advertise-address=$1 \
