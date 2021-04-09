@@ -1,7 +1,7 @@
 # kubeadm
 
-kubeadm is a tool used for bootstraping Kubernetes clusters. 
-Scripts included here can be used for creating single master 
+kubeadm is a tool used for bootstraping Kubernetes clusters. Scripts
+included here can be used for creating single master (or multi master)
 multi worker cluster using Ubuntu servers.
 
 ## Steps
@@ -18,7 +18,12 @@ multi worker cluster using Ubuntu servers.
 ```bash
 ./worker.sh <master-node-ip> <api-server-port> <token> <certificate-hash>
 ```
-
+7. Get scripts on additional master node. (Not required if cluster is a only 
+single master cluster)
+8. Run below command
+```bash
+./additional-masters.sh <master-node-ip> <api-server-port> <token> <certificate-hash> <cerificate-key>
+```
 
 ## TODO
 
