@@ -1,6 +1,6 @@
 variable "autoscaler_version" {
-  description = "Kubernetes cluster auto scaler image version"
-  type        = string
+  description = "Kubernetes cluster auto scaler image version"
+  type        = string
 }
 
 variable "cluster_name" {
